@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your menus:</title>
+    <ul>
+        {% for menu in menus %}
+            <li><a href="{% url 'wordpress' menu_id=menu.id %}">{{ menu.name }}</a></li>
+        {% endfor %}
+    </ul>
+</head>
+<body>
+
+</body>
+</html>
